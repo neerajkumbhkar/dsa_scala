@@ -16,6 +16,7 @@ object PrimeNumber {
           }
         }
       }
+
       if(isPrime) println("prime") else println("not prime")
     }
   }
