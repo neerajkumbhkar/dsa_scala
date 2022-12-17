@@ -1,6 +1,5 @@
-import java.util
+
 import java.util.Scanner
-import scala.collection.mutable.ArrayBuffer
 
 object SumOfTwoArray {
 
@@ -28,13 +27,9 @@ object SumOfTwoArray {
   def main(args: Array[String]): Unit = {
     val sc = new Scanner(System.in)
     val n1 = sc.nextInt()
-    val arr1 = Array.fill(n1){
-        sc.nextInt()
-      }
+    val arr1 = Array.fill(n1){sc.nextInt()}
     val n2 = sc.nextInt()
-    val arr2 = Array.fill(n2) {
-        sc.nextInt()
-    }
+    val arr2 = Array.fill(n2) {sc.nextInt()}
     sumOfTwoArr(arr1,n1,arr2,n2)
   }
 }
