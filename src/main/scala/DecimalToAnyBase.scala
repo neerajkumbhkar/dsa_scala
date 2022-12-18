@@ -9,9 +9,9 @@ object DecimalToAnyBase {
     var it = 0
     while (n > 0) {
         var rem = n%b
-        it = it+1
         n=n/b
         ans=ans+rem*Math.pow(10,it).toInt
+        it = it+1
     }
     print(ans)
   }

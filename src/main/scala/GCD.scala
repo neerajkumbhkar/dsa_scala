@@ -8,7 +8,7 @@ object GCD {
     val oa = n1
     val ob = n2
     while (n1 % n2 != 0) {
-      var reminder = n1 % n2
+      val reminder = n1 % n2
       n1 = n2
       n2 = reminder
     }
