@@ -11,8 +11,8 @@ object BarChart {
       arr+=e
       max = Math.max(max, arr(i))
     }
-    for (i <- (1 to max).reverse) {
-      for (e <- arr) {
+    (1 to max).reverse.foreach { i=>
+      arr.foreach { e=>
         if (e>=i) print("*\t") else  print("\t")
       }
       println()
