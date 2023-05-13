@@ -1,8 +1,8 @@
 import java.util.Scanner
 import scala.util.control.Breaks.{break, breakable}
 
-object PrimeNumber {
-  def main(args: Array[String]): Unit = {
+object PrimeNumber extends App {
+ /* def main(args: Array[String]): Unit = {
     val sc = new Scanner(System.in)
     val t = sc.nextInt()
     for(i<-0 until(t)){
@@ -19,5 +19,12 @@ object PrimeNumber {
 
       if(isPrime) println("prime") else println("not prime")
     }
-  }
+  }*/
+
+  def isPrime(n:Int):Boolean= n match
+    case 0 | 1  => throw new IllegalArgumentException()
+    case i => {
+        !(2 to scala.math.sqrt(i).toInt).exists(x => i % x == 0)
+    }
+  println(isPrime(21))
 }
